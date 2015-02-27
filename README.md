@@ -16,7 +16,7 @@ If a PoE is contained in a block which is later deprecated by a hard fork, then 
 
 If the hashing algorithm used is vulnerable, the validity of a PoE scheme is compromised. For example, if the hashing algorithm has many collisions (different input values that hash to the same output value), an author could retroactively assert he wrote "foo" instead of "bar," or vice versa.
 
-Using the blockchain for non-financial payment purposes is politically sensitive and has been criticized for causing blockchain bloat. Eligius/luke-jr censors `OP_RETURN` and Counterparty transactions, arguing using the blockchain as a data store is abusive.
+Using the blockchain for non-financial payment purposes is politically sensitive and has been criticized for causing blockchain bloat. Eligius/luke-jr censors `OP_RETURN` and Counterparty transactions, arguing that using the blockchain as a data store is abusive.
 
 Finally, the legal enforceability of PoE is uncertain and needs to be tested in court.
 
@@ -42,15 +42,15 @@ There are several protocol layers that extend the blockchain's functionality as 
 **Factom** (http://factom.org/)
 Factom is designed to be a data layer for the blockchain. In Factom, an application has its own Entry Chain, in which it records application-specific data. New Entry Blocks are hashed and consolidated into Factom's Directory Chain. New Directory Blocks are hashed and written to the Bitcoin blockchain every ten minutes. In this way, Factom enables massive amounts of data to be certified by the blockchain without causing excessive bloat.
 
-{<1>}![Factom diagram](https://s3.amazonaws.com/maclanewilkison/factom-diagram.png)
+![Factom diagram](https://s3.amazonaws.com/maclanewilkison/factom-diagram.png)
 
 **Blockstore** (https://github.com/openname/blockstore)
-Blockstore is a distributed hash table (DHT) on top of the Bitcoin blockchain. Its key-value pairs correspond, unsurprisingly, to the hash of the stored data and the stored data itself. The key/data hashes are embedded into the Bitcoin blockchain and can be transferred between addresses. Think Namecoin, but on the Bitcoin blockchain.
+Blockstore is a distributed hash table (DHT) on top of the Bitcoin blockchain. Its key-value pairs correspond, unsurprisingly, to the hash of the stored data and the stored data itself. The keys/data hashes are embedded into the blockchain and can be transferred between addresses. Think Namecoin, but on the Bitcoin blockchain.
 
-{<2>}![Blockstore diagram](https://s3.amazonaws.com/maclanewilkison/openname-bitcoin-dht-diagram-4.png)
+![Blockstore diagram](https://s3.amazonaws.com/maclanewilkison/openname-bitcoin-dht-diagram-4.png)
 
 **Storj** (http://storj.io/)
-Storj is a decentralized storage protocol. As part of its proof of storage scheme, it publishes PoE audits to the blockchain. This serves as proof files are appropriately stored somewhere in the network.
+Storj is a decentralized storage protocol. As part of its proof of storage scheme, it publishes PoE audits to the blockchain. This serves as proof that files are appropriately stored somewhere in the network.
 
 ###Startups
 There is a long list of websites offering timestamping/proof of existence/proof of publication services, most all of which use `OP_RETURN`. For the most part, they position themselves as consumer apps but do not outline clear use cases. A large portion of their users may be experimenting or writing things to the blockchain as a gimmick. [4] Some of the more notable or unique ones are described below.
