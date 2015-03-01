@@ -75,6 +75,7 @@ Provides white label collateral registries that can be used by financial institu
 
 **Others**
 
+- OriginStamp (http://www.originstamp.org/)
 - Stampd (http://stampd.io/)
 - Bitstamped (https://bitstamped.io/)
 - Blockai (https://www.blockai.com/)
