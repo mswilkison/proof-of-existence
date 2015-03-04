@@ -68,7 +68,7 @@ Requires registration and stores your files for future viewing/retrieval via the
 The first Proof of Existence mobile app. Currently only available on iOS.
 
 **CryptoGraffiti** (http://www.cryptograffiti.info/)
-Enables users to read/write plain text messages to the blockchain. Uses a similar mechanism as Satoshi's genesis quote, "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks". [5]
+Enables users to read/write plain text messages to the blockchain.
 
 **Contractual** (http://registry.contractual.io/)
 Provides white label collateral registries that can be used by financial institutions to register new claims and view prior liens against moveable assets. Writes a hash of each registration to the blockchain and stores associated documents/contracts for future viewing/retrieval. Currently running on testnet.
@@ -104,5 +104,3 @@ Chain and/or Proof of Existence's APIs may be used as references:
 [3] https://github.com/Flavien/bitcoin/commit/a9306587a42eac7fb889b9c8d03140980fdf1398
 
 [4] http://www.righto.com/2014/02/ascii-bernanke-wikileaks-photographs.html
-
-[5] https://en.bitcoin.it/wiki/Genesis_block
